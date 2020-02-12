@@ -1,0 +1,13 @@
+.site-logo {
+  font-family: $primary-font;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $primary-white-color;
+  align-items: center;
+
+  &:hover {
+    color: $primary-accent-color;
+    transition: linear 200ms;
+  }
+}

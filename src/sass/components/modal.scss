@@ -1,0 +1,48 @@
+.modal {
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__backdrop {
+    @include center-flex($type: 'all');
+    background-image: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.7),
+      rgba(252, 227, 138, 0.7)
+    );
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+  }
+
+  &__socials {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include center-flex($type: 'all');
+    width: 55px;
+    height: 55px;
+    background-color: $primary-accent-color;
+
+    &:hover {
+      background-color: $primary-red-color;
+      transition: background-color 0.3s;
+    }
+  }
+
+  .modal__link--icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: $primary-red-color;
+  }
+
+  .modal__link:hover .modal__link--icon {
+    fill: $primary-white-color;
+  }
+}

@@ -1,0 +1,18 @@
+.page-header {
+  background: url(../images/background/background.jpg);
+  background-size: cover;
+
+  &__box {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(243, 129, 129, 0.9),
+      rgba(252, 227, 138, 0.9)
+    );
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background: url(../images/background/background@2x.jpg);
+    }
+  }
+}

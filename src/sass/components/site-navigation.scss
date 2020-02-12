@@ -1,0 +1,28 @@
+.site-navigation {
+  width: 630px;
+  align-items: center;
+
+  &__link {
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      color: $primary-accent-color;
+      transition: linear 200ms;
+    }
+
+    &::after {
+      @include pseudo(block, '');
+      background: $primary-accent-color;
+      height: 3px;
+      opacity: 0;
+      margin-top: 10px;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transition: linear 200ms;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.page-footer {
+  &__box {
+    border-top: 1px solid $secondary-white-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__copyright {
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-family: $primary-font;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: $primary-red-color;
+    text-decoration: none;
+  }
+
+  &__input {
+    display: flex;
+
+    &--button {
+      width: 150px;
+      height: 40px;
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 700;
+      color: $primary-white-color;
+      background-color: $btn-bg-color;
+      border: none;
+    }
+
+    &--field {
+      font-family: $secondary-font;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 24px;
+      border: 1px solid $btn-broder-color;
+      border-right: 0;
+      height: 40px;
+      width: 230px;
+      padding-left: 10px;
+
+      &:focus {
+        outline: unset;
+      }
+    }
+  }
+}

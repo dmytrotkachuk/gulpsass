@@ -1,0 +1,32 @@
+.section {
+  padding: 50px 0;
+
+  &__title {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+
+    &--line {
+      display: block;
+      font-family: $primary-special-font;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &::after {
+      @include pseudo(block, '');
+      background-color: $primary-red-color;
+      height: 3px;
+      width: 60px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+}
